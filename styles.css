@@ -440,13 +440,13 @@ main {
         background-image: url(https://img.freepik.com/foto-gratis/vista-superior-maquillaje_23-2148136614.jpg?w=740&t=st=1705003211~exp=1705003811~hmac=09694c9c7c791350e4913d993d44c09dd4b79557b2fc0680794ca68e9b08abf5);
         /* height: max-content; */
 
-        height: 73.1vh;
+        height: 50vh;
     }
 
     .background {
 
-        height: fit-content;
-
+        height: 49vh;
+        justify-content: start;
 
 
     }
