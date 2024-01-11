@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&family=Roboto+Mono:ital,wght@0,400;0,500;1,300;1,400&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --font1: 'Oswald', sans-serif;
+    --font2: 'Roboto Mono', monospace;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: #000000;
+
+}
+
+header .header-left {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+}
+
+header .header-left nav {
+    margin-left: 50px;
+    padding-right: 4rem;
+}
+
+header .header-left nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+header .logo {
+    max-width: 500px;
+    max-height: 500px;
+    width: 186px;
+    height: 140px;
+    object-fit: cover;
+}
+
+header nav ul {
+    display: flex;
+    gap: 3.6rem;
+
+}
+
+header ul li {
+    position: relative;
+
+}
+
+header nav ul a {
+    display: block;
+    font-family: var(--font1);
+    color: #aaaaaa;
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+header ul li::after {
+    content: '';
+    height: 2px;
+    width: 0;
+    background: #3832005d;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    transition: 1s;
+    animation: barrita 2s ease-in-out infinite;
+}
+
+@keyframes barrita {
+    0% {
+        background: pink;
+    }
+
+    100% {
+        background-color: blueviolet;
+    }
+
+}
+
+nav ul li:hover::after {
+    content: '';
+    width: 100%;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #e6e6e6;
+}
+
+header .header-right .hamburger {
+    margin-left: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+header .header-right .hamburger div {
+    width: 20px;
+    height: 2px;
+    margin: 4px 0;
+    background: #fff;
+}
+
+
+/* END HEADER */
+
+/* MAIN */
+
+.unica {
+    display: none;
+}
+
+main {
+
+    width: 100%;
+
+}
+
+.flex-titles h1 {
+    font-size: 3.6rem;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.767), #bbbbbb, rgba(128, 128, 128, 0.521));
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+
+}
+
+
+.titles {
+    font-family: var(--font2);
+    color: #e6e6e6;
+    padding: 0 2rem;
+}
+
+
+.flex1 {
+    display: flex;
+    background: linear-gradient(-90deg,
+            #7E2A80 20%,
+            #843181ce 10%,
+            #7E2A80 20%,
+            #822F7F 50%,
+            blueviolet);
+    align-items: center;
+    justify-content: center;
+
+}
+
+.flex-titles {
+    /* width: 8rem; */
+
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 50%;
+
+}
+
+.imgMain {
+    background-color: violet;
+    height: 30rem;
+    /* width: 36rem; */
+    width: 50%;
+    background-image: url(https://img.freepik.com/foto-gratis/cepillo-cosmetico-nube-polvo-rosado-sobre-fondo-oscuro_23-2148209048.jpg?w=740&t=st=1704848153~exp=1704848753~hmac=18525e0034187796cb6d04d8e60f7a1072a3d3a88afe74f89937d4f3443436e8);
+    /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVw0bqNHe1JHMWfjuEdImZG-TVcMS9lEaVsA&usqp=CAU); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    object-fit: scale-down;
+}
+
+.imgMain2 {
+    background-color: violet;
+    height: 30rem;
+    /* width: 36rem; */
+    width: 50%;
+    background-image: url(https://img.freepik.com/foto-gratis/artista-maquillaje-cerca-aplicar-sombra-ojos-mujer-pincel_23-2148332527.jpg?w=740&t=st=1704847417~exp=1704848017~hmac=7813ad4cc79eb875b700e13ea77791b1aebb3f081d1f46b2b51ff4ac970bc2b6);
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+.flex2 {
+    display: flex;
+    background: linear-gradient(90deg,
+            #7E2A80 20%,
+            #843181ce 10%,
+            #7E2A80 20%,
+            #822F7F 50%,
+            blueviolet);
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* SECTION SERVICES */
+
+
+
+.class-swal,
+.class-swal2 {
+    background: linear-gradient(80deg,
+            #7E2A80 20%,
+            #843181ce 10%,
+            #7E2A80 20%,
+            #822F7F 50%,
+            blueviolet);
+    color: white;
+    font-family: var(--font2);
+}
+
+
+/* END MAIN */
+
+
+
+/* MEDIA RESPONSIVE DESIGN*/
+
+@media only screen and (max-width: 1000px) {
+
+    header {
+        padding: 0 20px;
+    }
+
+    header .logo {
+        max-width: 500px;
+        max-height: 500px;
+        width: 146px;
+        height: 120px;
+        object-fit: cover;
+    }
+
+    header .header-right .hamburger {
+        display: block;
+
+        margin: 2rem;
+    }
+
+    header .header-left nav {
+        margin: 0;
+        position: absolute;
+        left: 0;
+        top: -100%;
+        width: 100%;
+        height: 50%;
+        /* background-color: #202123; */
+        /* background-color: #ffffff3d; */
+
+        background: linear-gradient(80deg,
+                #7E2A80 20%,
+                #843181ce 10%,
+                #7E2A80 20%,
+                #822F7F 50%,
+                blueviolet);
+        padding: 30px;
+        transition: .8s;
+        text-align: center;
+        z-index: 1000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom-right-radius: 18px;
+        border-bottom-left-radius: 18px;
+    }
+
+    header .header-left nav.active {
+        top: 123px;
+    }
+
+    header ul li {
+        margin: 1.6rem;
+    }
+
+    header .header-left nav ul {
+        display: block;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    /* END MEDIA HEADER */
+
+    /* START MEDIA MAIN */
+
+
+    .flex1,
+    .flex2 {
+
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 0;
+        height: max-content;
+        /* padding: 1rem; */
+        gap: 2rem;
+    }
+
+    .flex-titles {
+        width: 100%;
+        padding: 1rem;
+
+        gap: 1.4rem;
+
+
+    }
+
+    .flex-titles h1 {
+        font-size: 2rem;
+
+
+    }
+
+    .titles p {
+        margin-bottom: 1rem;
+    }
+
+    .titles {
+        padding: 0;
+    }
+
+    .imgMain2 {
+        display: none;
+    }
+
+    .unica {
+        display: block;
+    }
+
+    .imgMain,
+    .imgMain2 {
+        width: 100%;
+        /* object-fit: cover; */
+        height: 20rem;
+        background-position: center;
+    }
+
+}
