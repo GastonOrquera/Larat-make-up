@@ -37,7 +37,7 @@ const title = document.querySelector('.ah');
         }
     });
     if (nombre.trim() === '' || nombre === null) {
-        title.textContent = `Bienvenidos a Lara Make Up`;
+        title.textContent = `Bienvenidos a Larat Make Up`;
         Swal.fire({
             title: `No ingreso el nombre.`,
             text: 'Por favor ingrese el nombre.',
@@ -53,7 +53,7 @@ const title = document.querySelector('.ah');
     }
 
     else {
-        title.textContent = `Bienvenidos a Lara Make Up, ${nombre}`;
+        title.textContent = `Bienvenidos a Larat Make Up, ${nombre}`;
         Swal.fire({
             title: `${nombre}`,
             text: 'Gracias por ingresar el nombre.',

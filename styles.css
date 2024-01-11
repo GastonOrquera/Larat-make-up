@@ -348,8 +348,7 @@ main {
     .imgMain,
     .imgMain2 {
         width: 100%;
-        /* object-fit: cover; */
-        height: 20rem;
+        height: 21rem;
         background-position: center;
     }
 
