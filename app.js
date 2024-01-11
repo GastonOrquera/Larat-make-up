@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
 // -------------------------------------
 
 const title = document.querySelector('.ah');
-const titleTwo = document.querySelectorAll('.ahh');
+const titleTwo = document.querySelector('.ahh');
 
 
 
@@ -59,6 +59,9 @@ const titleTwo = document.querySelectorAll('.ahh');
 
     else {
         title.textContent = `Bienvenidos a Larat Make Up, ${nombre}`;
+        titleTwo.textContent = `${nombre}, en Larat Make Up, no solo creamos looks,
+        sino que también creamos experiencias que te harán sentir seguro/a y radiante. Únete a
+        nosotros y déjanos realzar tu belleza de una manera única y personalizada.`;
         Swal.fire({
             title: `${nombre}`,
             text: 'Gracias por ingresar el nombre.',
