@@ -214,7 +214,21 @@ main {
 
 /* SECTION SERVICES */
 
+.btn-contact {
+    font-family: var(--font2);
+    color: #000000;
+    background-color: #e6e6e6;
+    font-weight: 600;
+    padding: .6rem 1rem;
+    width: max-content;
+    transition: 1s;
+    margin-left: 2rem;
+}
 
+.btn-contact:hover {
+    background-color: #000000;
+    color: #e6e6e6;
+}
 
 .class-swal,
 .class-swal2 {
@@ -227,6 +241,72 @@ main {
     color: white;
     font-family: var(--font2);
 }
+
+.class-swal2 {
+    padding: 2rem;
+}
+
+.section-types {
+    background-image: url(https://img.freepik.com/psd-gratis/representacion-3d-banner-belleza_23-2150159863.jpg?w=740&t=st=1705000529~exp=1705001129~hmac=2608537a96ac45c288747bfd7eb1f8297a6fefef953c0956339285e32438e42b);
+    /* background-position: left; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vw;
+    max-height: 100vw;
+
+}
+
+.background {
+    background-color: #00000033;
+    height: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.background h2 {
+    font-family: var(--font1);
+    text-align: center;
+    padding: 2rem;
+    color: #161616;
+    font-size: 2.4rem;
+}
+
+.background ul li {
+    font-family: var(--font2);
+    font-weight: 800;
+    /* text-align: start; */
+    padding: 1rem;
+    font-size: 1.2rem;
+    display: flex;
+    gap: .6rem;
+
+    margin-top: 1rem;
+}
+
+.bi-balloon-heart-fill {
+    animation: hearth 2s ease-in-out infinite;
+    font-size: 1.4rem;
+}
+
+@keyframes hearth {
+    0% {
+        color: #161616;
+    }
+
+    50% {
+        color: #ac2424;
+    }
+
+    100% {
+        color: #161616;
+    }
+}
+
+
+
 
 
 /* END MAIN */
@@ -314,6 +394,7 @@ main {
         gap: 2rem;
     }
 
+
     .flex-titles {
         width: 100%;
         padding: 1rem;
@@ -349,4 +430,36 @@ main {
         background-position: center;
     }
 
+    .btn-contact {
+        padding: .4rem .8rem;
+        margin: 0;
+    }
+
+    .section-types {
+        background-position: center;
+        background-image: url(https://img.freepik.com/foto-gratis/vista-superior-maquillaje_23-2148136614.jpg?w=740&t=st=1705003211~exp=1705003811~hmac=09694c9c7c791350e4913d993d44c09dd4b79557b2fc0680794ca68e9b08abf5);
+        /* height: max-content; */
+
+        height: 73.1vh;
+    }
+
+    .background {
+
+        height: fit-content;
+
+
+
+    }
+
+    /* .background  */
+
+    .background h2 {
+        font-size: 1.2rem;
+    }
+
+    .background ul li {
+        gap: 0;
+        font-size: 1rem;
+        margin-top: 0;
+    }
 }
