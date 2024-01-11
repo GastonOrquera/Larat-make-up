@@ -404,7 +404,7 @@ main {
     .flex-titles {
         width: 100%;
         padding: 1.4rem;
-        gap: 2rem;
+        gap: 1.6rem;
     }
 
     .flex-titles h1 {
@@ -466,5 +466,11 @@ main {
         gap: 0;
         font-size: 1rem;
         margin-top: 0;
+    }
+
+
+
+    .class-swal2 {
+        padding: 0;
     }
 }
