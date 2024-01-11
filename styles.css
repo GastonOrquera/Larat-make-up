@@ -254,7 +254,6 @@ main {
 
 .section-types {
     background-image: url(https://img.freepik.com/psd-gratis/representacion-3d-banner-belleza_23-2150159863.jpg?w=740&t=st=1705000529~exp=1705001129~hmac=2608537a96ac45c288747bfd7eb1f8297a6fefef953c0956339285e32438e42b);
-    /* background-position: left; */
     background-repeat: no-repeat;
     background-size: cover;
     height: 40vw;
@@ -295,6 +294,7 @@ main {
 .bi-balloon-heart-fill {
     animation: hearth 2s ease-in-out infinite;
     font-size: 1.4rem;
+
 }
 
 @keyframes hearth {
@@ -403,8 +403,8 @@ main {
 
     .flex-titles {
         width: 100%;
-        padding: 1rem;
-        gap: 1.6rem;
+        padding: 1.4rem;
+        gap: 2rem;
     }
 
     .flex-titles h1 {
