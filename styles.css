@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&family=Roboto+Mono:ital,wght@0,400;0,500;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300;400;500&family=Roboto+Mono:ital,wght@0,400;0,500;1,300;1,400&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 * {
@@ -13,6 +14,7 @@
 :root {
     --font1: 'Oswald', sans-serif;
     --font2: 'Roboto Mono', monospace;
+    --font3: 'Bebas Neue', sans-serif;
 }
 
 /* HEADER */
@@ -145,9 +147,13 @@ main {
 
 
 .titles {
-    font-family: var(--font2);
+    font-family: var(--font1);
     color: #e6e6e6;
     padding: 0 2rem;
+}
+
+.flex-titles p {
+    font-family: var(--font3);
 }
 
 
@@ -438,8 +444,6 @@ main {
     .section-types {
         background-position: center;
         background-image: url(https://img.freepik.com/foto-gratis/vista-superior-maquillaje_23-2148136614.jpg?w=740&t=st=1705003211~exp=1705003811~hmac=09694c9c7c791350e4913d993d44c09dd4b79557b2fc0680794ca68e9b08abf5);
-        /* height: max-content; */
-
         height: 50vh;
     }
 
@@ -450,6 +454,7 @@ main {
 
 
     }
+
 
     /* .background  */
 
